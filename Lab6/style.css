@@ -1,0 +1,29 @@
+h1, h2 {
+  color: #1d3557;
+  text-align: center;
+}
+#wrapper {
+  background-color: #f1faee;
+  border: 2px solid #1d3557;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+#fun-facts {
+  background-color: #a8dadc;
+  border: 2px solid #457b9d;
+  border-radius: 10px;
+  padding: 20px;
+}
+.intro {
+  color: #457b9d;
+  font-size: 20px;
+}
+.about p {
+  border-left: 4px solid #457b9d;
+  padding-left: 15px;
+  margin: 10px 0;
+}
+a:hover {
+  color: #e63946;
+}

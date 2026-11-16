@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Practice</title>
+  <style>
+    /* =====================================================
+       PART 1 - CSS SELECTORS PRACTICE
+       Corner Bakery practice file (from the lab handout).
+       Each rule is labeled so the instructor can find it.
+       ===================================================== */
+
+    /* ---------- ELEMENT SELECTOR ----------
+       Selects every <p> on the page. */
+    p {
+      font-size: 20px;
+    }
+
+    /* ---------- CLASS SELECTOR ----------
+       Selects every element with class="item". */
+    .item {
+      background-color: lightyellow;
+    }
+
+    /* ---------- CLASS SELECTOR ----------
+       Selects every element with class="special". */
+    .special {
+      font-weight: bold;
+    }
+
+    /* ---------- ID SELECTOR ----------
+       Selects only the one element with id="title". */
+    #title {
+      text-align: center;
+    }
+
+    /* ---------- ID SELECTOR ----------
+       Selects only the one element with id="menu". */
+    #menu {
+      border: 2px solid black;
+    }
+
+    /* ---------- GROUP SELECTOR ----------
+       One rule applied to h1 and h2 together. */
+    h1, h2 {
+      color: navy;
+    }
+
+    /* ---------- DESCENDANT SELECTOR ----------
+       Selects only the <p> elements inside #about. */
+    #about p {
+      background-color: lavender;
+    }
+
+    /* ---------- ELEMENT AND CLASS COMBINED ----------
+       Only a <p> that ALSO has class="special". */
+    p.special {
+      text-decoration: underline;
+    }
+
+    /* ---------- PSEUDO-CLASS SELECTOR ----------
+       Applies only while the mouse is over the element. */
+    a:hover {
+      color: red;
+    }
+
+    .item:hover {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Corner Bakery</h1>
+  <p class="tagline">Fresh bread and pastries every day.</p>
+
+  <div id="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li class="item">Pandesal</li>
+      <li class="item special">Ube Cheese Roll</li>
+      <li class="item">Banana Bread</li>
+    </ul>
+  </div>
+
+  <div id="about">
+    <h2>About</h2>
+    <p>We bake in small batches.</p>
+    <p id="note" class="special">Our ube rolls are made from scratch.</p>
+    <a href="https://example.com">Visit our page</a>
+  </div>
+</body>
+</html>
